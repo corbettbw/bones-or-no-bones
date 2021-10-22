@@ -1,15 +1,124 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@font-face {
+	font-family: 'SansThirteenBlack';
+	src: url('/fonts/sansthirteenblack.eot');
+	src: local('☺'), url('/fonts/sansthirteenblack.woff') format('woff'), url('/fonts/sansthirteenblack.ttf') format('truetype'), url('/fonts/sansthirteenblack.svg#webfont180qSKaW') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fffefc;
+    color: #161300;
+    font-family: Baskerville, Georgia, serif;
+}
+
+div#container {
+    width: 920px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+a:link,
+a:visited {
+    color: #ca251f;
+    text-decoration: none;
+}
+a:hover,
+a:active {
+    color: #ff0000;
+    text-decoration: underline;
+}
+a img {
+	border: none;
+}
+p#answer {
+    /* background: url("Noodle_Bones_Day.jpg") no-repeat center 100px; */
+    margin: 80px 0 0;
+    padding: 0;
+    height: 258px;
+    /* overflow: hidden; */
+    font: normal 288px/288px SansThirteenBlack, Impact, Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+}
+p#answer strong {
+	font-weight: normal;
+}
+hr {
+    color: #161300;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    width: 385px;
+    height: 50px;
+    border: 0;
+    background: #161300;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+}
+.yes hr {
+    width: 385px;
+}
+.no hr {
+    width: 832px;
+}
+h2 {
+    padding-top: 42px;
+}
+p#comment {
+    margin:102px 0 0;
+    padding: 0 0 22px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.6em;
+    text-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+.yes p#comment {
+    margin-top: 0px;
+}
+p#count {
+    margin: 102px 0 0;
+    padding: 0 0 12px;
+    line-height: 20px;
+    height: 24px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.no p#count {
+    margin-top: 20px;
+}
+a#badge {
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 129px;
+    height: 128px;
+}
+
+iframe#like {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    overflow: hidden;
+    height: 45px;
+    width: 225px;
+}
+p#tweet {
+    margin: 0 auto;
+    width: 110px;
+}
+
+p#footer {
+    padding: 102px 0 20px;
+    text-align:right;
+    font-size: 0.9em;
+}
